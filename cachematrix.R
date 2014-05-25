@@ -35,7 +35,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## inverse is not calculated every time the the loop passes. 
 ## It is possible to change the underlying matrix with help of subfunction
 ## set, during e.g. the loop process in a "dynamic" way (function set is not
-## directly invoked in cacheSolve, can be called as a$set()).
+## directly invoked in cacheSolve, can be called as a$set(newmatrix)).
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
